@@ -6,7 +6,7 @@
 <br>
 <div [@tasks]="tasks.length">
     <div class="input-group mb-2">
-        <input type="text" id="todoText" class="form-control" placeholder="Hello...What tasks do you need to do ?" [(ngModel)]="todoText">
+        <input type="text" id="todoText" class="form-control" placeholder="Hello...What tasks do you need to do ?" [(ngModel)]="todoText" (keyup.enter)="addToDoTask()">
         <div class="input-group-append">
           <button class="btn btn-info" type="submit" (click)="addToDoTask()">New To-Do</button>
         </div>
