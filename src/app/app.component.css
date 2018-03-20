@@ -3,11 +3,11 @@ body{
 }
 
 .side{
-    padding-top:5%;
-    background-color:#53BDAC;
+    padding-top:4%;
+    background-color:#54CDD5;
     /*#DB775E;*/
     /*lightseagreen*/
-    width:29%;
+    width:30%;
     float:left;
     height:100%;
     position: static;
@@ -27,7 +27,7 @@ hr{
     background-color:whitesmoke;
 }
 .main{
-    width:69.75%;
+    width:70%;
     float:left;
 }
 
@@ -47,9 +47,9 @@ ul{
         width:100%;
     }
 }
-
+/*
 @media screen and (min-width:650px){
     .side{
         height:100vh !important;
     }
-}
+}*/
