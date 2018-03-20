@@ -1,0 +1,72 @@
+.statusBar{
+    overflow:auto;
+    padding:2%;
+}
+
+.complete{
+    background-color:#5EBF3E;
+}
+
+.completeIcon{
+    color:rgb(122, 204, 67);
+}
+
+.completeText{
+    text-decoration: line-through;
+    color:#D4CAC8;
+}
+
+.incomplete{
+    background-color:lightseagreen;
+  /* background-color: #2C3D4C; */
+}
+
+.incompleteIcon{    
+    color:#B3C8D4;
+}
+
+.row{
+    margin:0px;
+    margin-bottom:2%;
+}
+
+.status, .delete{
+    width:12%;
+    padding:5% 0%;
+    float:left;
+    font-size: 30px;
+    text-align: center;
+    margin:auto;
+}
+
+.text{
+    width:75%;
+    float:left;
+    padding-left:5%;
+}
+
+a{
+    color:black;
+}
+
+.task{
+    background-color:white !important;
+    border:solid #E5DCD8 1px;
+    border-radius:5px;
+}
+
+.col-md-6{
+    padding-left:0px !important;
+    padding-right:0px !important;
+    margin:auto;
+}
+
+.input-group{
+    width: 70%;
+    margin: auto;
+}
+
+.text > h4{
+    margin-top: 8%;
+    margin-bottom: 5%;
+}

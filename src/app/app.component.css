@@ -1,0 +1,31 @@
+body{
+    width:100%;
+}
+
+.side{
+    padding-top:5%;
+    background-color:#DB775E;
+    /*DC756C*/
+    width:29vw;
+    float:left;
+    height:100vh;
+    position: static;
+    color:white;
+}
+
+.side > *{
+    padding:0% 5%;
+}
+
+.side > h3{
+    margin-left:25%;
+}
+
+hr{
+    width:60%;
+    background-color:whitesmoke;
+}
+.main{
+    width:69.75vw;
+    float:left;
+}
