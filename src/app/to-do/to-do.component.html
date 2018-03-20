@@ -9,7 +9,7 @@
 <div [@tasks]="tasks.length">
   <!--Input field and submit button --><!--Input field and submit button -->
   <div class="input-group mb-2">
-      <input type="text" id="todoText" class="form-control" placeholder="Hello...What tasks do you need to do ?" [(ngModel)]="todoText" (keyup.enter)="addToDoTask()">
+      <input type="text" id="todoText" class="form-control" placeholder="Hi... What do you need to do ?" [(ngModel)]="todoText" (keyup.enter)="addToDoTask()">
       <div class="input-group-append">
         <button class="btn btn-info" type="submit" (click)="addToDoTask()">New To-Do</button>
       </div>

@@ -70,7 +70,7 @@ export class ToDoComponent implements OnInit {
   }
 
   // Function to update a to-do tasks status, i.e complete or pending
-  // This function switches the value of whether its complete or pending 
+  // This function switches the value of whether its complete or pending
   // in the array, depending on which one is clicked on
   updateTaskStatus(i) {
     this.tasks[i].complete = !this.tasks[i].complete;
