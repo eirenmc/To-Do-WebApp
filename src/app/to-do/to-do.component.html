@@ -1,41 +1,47 @@
+<!-- Nav bar -->
 <nav class="navbar navbar-light bg-dark">
     <button type="button" class="btn btn-dark" disabled>
   ( {{taskCount}} ) Tasks</button>
   <button class="btn btn-danger" (click)="removeAllTasks()">Delete All To-Do</button>
 </nav>
 <br>
-<div [@tasks]="tasks.length">
-    <div class="input-group mb-2">
-        <input type="text" id="todoText" class="form-control" placeholder="Hello...What tasks do you need to do ?" [(ngModel)]="todoText" (keyup.enter)="addToDoTask()">
-        <div class="input-group-append">
-          <button class="btn btn-info" type="submit" (click)="addToDoTask()">New To-Do</button>
-        </div>
-    </div>
-    <br>
-    <div class="row" *ngFor="let task of tasks; let i = index">
-      <div class="col-md-6 task">
-        <span *ngIf="!task.complete; else complete">
-          <div class="statusBar incomplete"></div>
-          <span class="status" (click)="updateTaskStatus(i, task.complete)">
-              <i class="far fa-circle incompleteIcon"></i>
-          </span>
-        </span>  
-        <ng-template #complete>
-          <div class="statusBar complete"></div>
-          <span class="status" (click)="updateTaskStatus(i, task.complete)">
-              <i class="far fa-check-circle completeIcon"></i>
-          </span>
-        </ng-template>
 
-        <div class="text">
-          <h4 class="list-group-item-heading" *ngIf="!task.complete; else crossOff">{{ task.taskText }}</h4>
-          <ng-template #crossOff>
-            <h4 class="list-group-item-heading completeText">{{ task.taskText }}</h4>
-          </ng-template>
-        </div>
-        <span class="delete" (click)="removeTask(i)">
-            <i class="far fa-times-circle incompleteIcon"></i>
-        </span>
+<div [@tasks]="tasks.length">
+  <!--Input field and submit button --><!--Input field and submit button -->
+  <div class="input-group mb-2">
+      <input type="text" id="todoText" class="form-control" placeholder="Hello...What tasks do you need to do ?" [(ngModel)]="todoText" (keyup.enter)="addToDoTask()">
+      <div class="input-group-append">
+        <button class="btn btn-info" type="submit" (click)="addToDoTask()">New To-Do</button>
       </div>
-    </div>    
+  </div>
+  <br>
+
+  <!-- Generation of to-do tasks, structure and styling -->
+  <div class="row" *ngFor="let task of tasks; let i = index">
+    <div class="col-md-6 task">
+      
+      <span *ngIf="!task.complete; else complete">
+        <div class="statusBar incomplete"></div>
+        <span class="status" (click)="updateTaskStatus(i, task.complete)">
+            <i class="far fa-circle incompleteIcon"></i>
+        </span>
+      </span>  
+      <ng-template #complete>
+        <div class="statusBar complete"></div>
+        <span class="status" (click)="updateTaskStatus(i, task.complete)">
+            <i class="far fa-check-circle completeIcon"></i>
+        </span>
+      </ng-template>
+
+      <div class="text">
+        <h4 class="list-group-item-heading" *ngIf="!task.complete; else crossOff">{{ task.taskText }}</h4>
+        <ng-template #crossOff>
+          <h4 class="list-group-item-heading completeText">{{ task.taskText }}</h4>
+        </ng-template>
+      </div>
+      <span class="delete" (click)="removeTask(i)">
+          <i class="far fa-times-circle incompleteIcon"></i>
+      </span>
+    </div>
+  </div>    
 </div>

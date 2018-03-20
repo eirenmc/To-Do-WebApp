@@ -6,9 +6,9 @@ body{
     padding-top:5%;
     background-color:#DB775E;
     /*DC756C*/
-    width:29vw;
+    width:29%;
     float:left;
-    height:100vh;
+    height:100%;
     position: static;
     color:white;
 }
@@ -18,7 +18,7 @@ body{
 }
 
 .side > h3{
-    margin-left:25%;
+    margin-left:20%;
 }
 
 hr{
@@ -26,10 +26,29 @@ hr{
     background-color:whitesmoke;
 }
 .main{
-    width:69.75vw;
+    width:69.75%;
     float:left;
 }
 
 ul{
     margin:0% 4%;
+}
+
+
+@media screen and (max-width: 650px){
+    .side{
+        float:right;
+        width:100%;
+        height:100% !important;
+    }
+    .main{
+        float:left !important;
+        width:100%;
+    }
+}
+
+@media screen and (min-width:650px){
+    .side{
+        height:100vh !important;
+    }
 }
