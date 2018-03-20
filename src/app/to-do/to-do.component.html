@@ -2,7 +2,7 @@
 <nav class="navbar navbar-light bg-dark">
     <button type="button" class="btn btn-dark" disabled>
   ( {{taskCount}} ) Tasks</button>
-  <button class="btn btn-danger" (click)="removeAllTasks()">Delete All To-Do</button>
+  <button class="btn btn-danger" (click)="removeAllTasks()">Delete All</button>
 </nav>
 <br>
 
@@ -11,7 +11,7 @@
   <div class="input-group mb-2">
       <input type="text" id="todoText" class="form-control" placeholder="Hi... Have a to-do ?" [(ngModel)]="todoText" (keyup.enter)="addToDoTask()">
       <div class="input-group-append">
-        <button class="btn btn-info" type="submit" (click)="addToDoTask()">New To-Do</button>
+        <button class="btn btn-info" type="submit" (click)="addToDoTask()">Add</button>
       </div>
   </div>
   <br>

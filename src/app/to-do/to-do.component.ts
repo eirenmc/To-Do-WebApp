@@ -5,6 +5,7 @@ import { trigger, style, transition, animate, keyframes, query, stagger } from '
   selector: 'app-to-do',
   templateUrl: './to-do.component.html',
   styleUrls: ['./to-do.component.css'],
+  // Animation for the creation of to-do tasks
   animations: [
     trigger('tasks', [
       transition('* => *', [
@@ -16,9 +17,10 @@ import { trigger, style, transition, animate, keyframes, query, stagger } from '
             style({opacity: 1, transform: 'translateY(0)', offset: 1}),
           ]))
         ]), {optional: true})
-      ])
+      ]),
     ])
   ]
+
 })
 
 export class ToDoComponent implements OnInit {
@@ -29,10 +31,7 @@ export class ToDoComponent implements OnInit {
   taskStatus: boolean = false;
 
   // Array to hold the to-dos, set up with 2 default entries to show off styling for completed and incomplete to-dos
-  tasks = [
-    { taskText: 'Do the grocery shopping', complete: false },
-    { taskText: 'Pick up prescription', complete: true }
-  ];
+  tasks = [];
 
   constructor() { }
 

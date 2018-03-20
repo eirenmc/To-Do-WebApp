@@ -18,7 +18,6 @@
 
 .incomplete{
     background-color:#5FE7F0;
-  /* background-color: #2C3D4C; */
 }
 
 .incompleteIcon{    
@@ -69,4 +68,10 @@ a{
 .text > h4{
     margin-top: 8%;
     margin-bottom: 5%;
+}
+
+@media screen and (max-width: 650px){
+    .input-group{
+        width: 80%;
+    }
 }
