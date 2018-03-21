@@ -23,7 +23,7 @@ The application has been setup for Angular 5. It has been deployed online and is
 * Extract the files from the coding challenge zip folder and place them where desired
 * Open command prompt
 * Move into the project folder `cd (DIRECTORIES BEFORE TO-DO APP)/to-do-webApp`
-* Run ‘npm install’ in order to install all required node_modules
+* Run `npm install` in order to install all required node_modules
 * Run the application locally ` ng serve `
 * Open browser and type url in as localhost:4200 **
 * Use the To-Do application
