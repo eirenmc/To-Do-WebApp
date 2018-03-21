@@ -1,27 +1,31 @@
 # ToDoWebApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+##Objective:
+To create a browser application to manage tasks to-do, mark completed and deletion, the application should be fit for purpose by Wednesday 21st March 2018 at 10.00am.
 
-## Development server
+#Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The application has been setup for Angular 5. It has been deployed online and is available: [http://eiren.projects.ie/todoapp/] (http://eiren.projects.ie/todoapp/) but in order to run the application locally, please follow the steps below:
 
-## Code scaffolding
+##Environment setup:
+* Install Node JS
+    * Go to nodejs.org
+    * Download NodeJS that is compatible with your OS 
+    * Note: Application uses: v8.10.0
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Install npm ` npm install -g npm `
+    *Note: Application uses: 5.7.1
 
-## Build
+* Install Angular CLI ` npm install -g @angular/cli `
+    *Note: Application uses: 1.7.3
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+##Application local deployment setup:
+* Extract the files from the coding challenge zip folder and place them where desired
+* Open command prompt
+* Move into the project folder `cd (DIRECTORIES BEFORE TO-DO APP)/to-do-webApp`
+* Run ‘npm install’ in order to install all required node_modules
+* Run the application locally ` ng serve `
+* Open browser and type url in as localhost:4200 **
+* Use the To-Do application
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+**Note: depending on whether this port is already used on your development environment, you will need to the project application to execute on a different port. If so, run the application in the command prompt using  `  ng serve --port ANOTHERPORT `
